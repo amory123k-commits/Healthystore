@@ -411,3 +411,33 @@ img {
     text-align: center;
   }
 }
+/* ========================================================= */
+/* 7. Product Tags Styling - مربعات ذهبية جذابة */
+/* ========================================================= */
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.product-tag {
+  background: rgba(212, 175, 55, 0.12);        /* ذهبي شفاف */
+  border: 1px solid rgba(212, 175, 55, 0.5);    /* حدود ذهبية */
+  color: #f5e7b2;                               /* لون نص ذهبي فاتح */
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;                          /* زوايا دائرية */
+  letter-spacing: 0.3px;
+  backdrop-filter: blur(2px);
+  transition: all 0.2s ease;
+}
+
+.product-tag:hover {
+  background: rgba(212, 175, 55, 0.25);
+  border-color: #d4af37;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
