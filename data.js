@@ -27,7 +27,7 @@ window.HS_DATA = {
       weight: "200 جم",
       ingredients: "زبده لوز بدون اي اضافات",
       image: "Gemini_Generated_Image_68hmb868hmb868hm.png",
-      tags: ["Ganachti", "بدون اي اضافات"],
+      tags: ["Ganachti", "  بدون اي اضافات"],
     },
     {
       id: 2,
@@ -592,3 +592,4 @@ window.HS_DATA = {
     },
   ],
 };
+
