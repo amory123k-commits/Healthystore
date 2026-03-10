@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Store - متجر المنتجات الصحية</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Icons (Font Awesome) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="main-header">
+      <div class="brand">
+        <div class="brand-logo">
+          <img src="637655602_1574117214146521_4690343952451169113_n.jpg" alt="شعار Healthy Store" class="brand-logo-img" />
+        </div>
+        <div class="brand-text">
+          <h1>Healthy Store</h1>
+          <p>منتجات صحية بإدارة مريم فاضل</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="ابحث عن منتج صحي..."
+            aria-label="بحث عن المنتجات"
+          />
+        </div>
+        <button class="theme-toggle" id="themeToggleBtn" aria-label="تغيير وضع الألوان">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="cart-toggle" id="cartToggleBtn" aria-label="فتح سلة التسوق">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+      <div class="hero-content">
+        <h2>Healthy Store: شريكك لحياة صحية أفضل</h2>
+        <span class="ramadan-pill">رمضان كريم</span>
+        <p class="hero-subtitle">
+          Gluten Free | Vegan | Keto
+        </p>
+        <p class="hero-description">
+          اختيارات منتقاة بعناية من المنتجات الصحية لتحافظ على نمط حياتك بدون تنازلات،
+          تحت إشراف <strong>مريم فاضل</strong>.
+        </p>
+        <a href="#products" class="hero-cta">تصفح المنتجات</a>
+      </div>
+      <div class="hero-image">
+        <img
+          src="assets/healthy-store-ramadan-banner.png"
+          alt="Healthy Store Ramadan Banner"
+          class="hero-main-image"
+        />
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" aria-label="تصنيفات المنتجات">
+      <div class="categories-inner">
+        <h3 class="section-title">التصنيفات</h3>
+        <div class="categories-buttons" id="categoryButtons">
+          <!-- أزرار التصنيفات تُنشأ ديناميكياً من الجافاسكريبت -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products" id="products">
+      <h3 class="section-title">منتجات Healthy Store</h3>
+      <div class="products-grid" id="productsGrid">
+        <!-- الكروت تُنشأ ديناميكياً من الجافاسكريبت -->
+      </div>
+    </section>
+  </div>
+
+  <!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cartSidebar" aria-label="سلة التسوق">
+    <div class="cart-header">
+      <h3>سلة التسوق</h3>
+      <button class="cart-close" id="cartCloseBtn" aria-label="إغلاق السلة">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- المنتجات المختارة -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-customer">
+        <label for="customerName">اسم العميل (اختياري)</label>
+        <input
+          id="customerName"
+          type="text"
+          placeholder="اكتب اسمك هنا..."
+        />
+      </div>
+      <div class="cart-total">
+        <span>الإجمالي:</span>
+        <span id="cartTotal">0 ج.م</span>
+      </div>
+      <a id="whatsappBtn" class="whatsapp-btn" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+        إتمام الطلب عبر واتساب
+      </a>
+    </div>
+  </aside>
+
+  <!-- Overlay خلف السلة -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>© <span id="yearSpan"></span> Healthy Store - جميع الحقوق محفوظة. إدارة: مريم فاضل.</p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/healthystoremariam/" target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/201278856853" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
