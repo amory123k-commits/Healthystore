@@ -37,7 +37,7 @@ window.HS_DATA = {
       category:  "البسكويت والحلويات",
       weight: "70 جم",
       ingredients: "زبده فول سوداني بدون اي اضافات",
-        image: " imgs/Gemini_Generated_Image_v6uerdv6uerdv6ue.png",
+        image: " Gemini_Generated_Image_v6uerdv6uerdv6ue.png",
       tags: ["Ganachti","بدون اي اضافات "],
     },
     {
@@ -599,4 +599,5 @@ window.HS_DATA = {
       },
   ],
 };
+
 
