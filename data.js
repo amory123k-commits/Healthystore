@@ -590,6 +590,18 @@ window.HS_DATA = {
       image: "Gemini_Generated_Image_ai2lr2ai2lr2ai2l.png",
       tags: ["Vegan 100%"],
     },
+    {
+      id: 51,
+      name: " بسكويت فانيليا ",
+      price: 70,
+      currency: "ج.م",
+      category: "البسكويت والحلويات",
+      weight: "200 جم",
+      ingredients: "",
+      image: "Gemini_Generated_Image_pco53zpco53zpco5.png",
+      tags: ["بيض, سكر, فانيليا,مياه,دقيق خالي من الجلوتين, زيت نخاله الارز, بيكينج باودر"],
+    },
   ],
 };
+
 
