@@ -620,7 +620,7 @@ window.HS_DATA = {
       category: "البسكويت والحلويات",
       weight: "52 جم",
       ingredients: "   خالي جلوتين وخالي لاكتوز ",
-      image: "Gemini_Generated_Image_2e4bz2e4bz2e4bz2.png",
+      image: "Gemini_Generated_Image_o4m6vlo4m6vlo4m6.png",
       tags: ["خالي جلوتين ","خالي لاكتوز"],
     },
       {
